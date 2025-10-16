@@ -46,8 +46,8 @@
         name: 'cash_usa',
         label,
         ariaLabel: label,
-        content: () => createElement(PaymentMethodContent),
-        edit: () => createElement(PaymentMethodContent),
+        content: createElement(PaymentMethodContent),
+        edit: createElement(PaymentMethodContent),
         canMakePayment: () => true,
         supports: settings.supports || { features: ['products'] },
     });
